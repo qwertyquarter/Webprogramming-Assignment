@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>명함 생성기</title>
+</head>
+<body>
+    <div class="input-form">
+        <label for="logo-input">로고 URL:</label>
+        <input type="text" id="logo-input" placeholder="URL을 입력하시오.">
+
+        <label for="company-name-input">회사명:</label>
+        <input type="text" id="company-name-input" placeholder="한국외대">
+
+        <label for="position-input">직급:</label>
+        <input type="text" id="position-input" placeholder="학생">
+
+        <label for="name-input">이름:</label>
+        <input type="text" id="name-input" placeholder="홍길동">
+
+        <label for="zipcode-input">우편번호:</label>
+        <input type="text" id="zipcode-input" placeholder="01234">
+
+        <label for="phone-input">전화번호:</label>
+        <input type="text" id="phone-input" placeholder="02-123-4567">
+
+        <label for="mobile-input">휴대폰 번호:</label>
+        <input type="text" id="mobile-input" placeholder="010-1234-5678">
+
+        <label for="fax-input">팩스:</label>
+        <input type="text" id="fax-input" placeholder="팩스 번호를 입력하시오.">
+
+        <label for="email-input">이메일:</label>
+        <input type="text" id="email-input" placeholder="hankuk@hufs.ac.kr">
+
+        <button id="generate-btn">명함 생성</button>
+    </div>
+
+    <div class="card" id="card">
+        <div class="card-header">
+            <img id="logo" src="" alt="로고">
+            <h1 id="company-name"></h1>
+        </div>
+        <div class="card-body">
+            <div class="name-info">
+                <h2 id="position-name"></h2>
+            </div>
+            <div id="zipcode" class="left-align"></div>
+            <div class="contact-info left-align">
+                <p id="phone-fax"></p>
+                <p id="mobile-email"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
